@@ -10,9 +10,9 @@ var nodestatic = require('node-static');
 var express = require('express');
 var path = require('path');
 
-var serverPort = process.env.OPENSHIFT_NODEJS_PORT || 1337
-var serverIpAddress = process.env.OPENSHIFT_NODEJS_IP || 'localhost'
-var socketIoServer = '127.0.0.1';
+var serverPort = process.env.PORT;
+var serverIpAddress = process.env.IP;
+var socketIoServer = process.env.IP;
 
 ////////////////////////////////////////////////
 // SETUP SERVER
