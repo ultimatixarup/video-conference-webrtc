@@ -1,1 +1,1 @@
-node server.js
+npm install && npm start
